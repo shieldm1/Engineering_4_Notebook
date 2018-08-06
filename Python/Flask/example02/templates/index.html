@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>Example 02 - Button Test</title>
+<style>
+.state0 {
+	background-color:#666;
+}
+.state1 {
+	background-color:#f00;
+}
+.btn {
+	padding:20px;
+	font-family:sans-serif;
+	font-size:72px;
+	color:#fff;
+	width:100%;
+	text-align:center;
+	margin:20px 0px;
+	border:solid 4px #222;
+	cursor:pointer;
+}
+.container {
+	padding:20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<form method="POST">
+<button type="submit" class="btn state{{btn1State}}" name="submitBtn" value="1">LED 1</button>
+<button type="submit" class="btn state{{btn2State}}" name="submitBtn" value="2">LED 2</button>
+</form>
+</div>
+</body>
+</html>
