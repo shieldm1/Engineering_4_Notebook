@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import RPi.GPIO as GPIO
 from time import sleep
 
-GPIO .setwarnings(False)
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(17,GPIO.OUT)
 GPIO.setup(18,GPIO.OUT)
@@ -10,7 +10,7 @@ GPIO.setup(18,GPIO.OUT)
 app = Flask(__name__)
 
 @app.route("/", methods=["GET","POST"])
-def index():	
+def index():
 	led1State = GPIO.input(17)
 	led2State = GPIO.input(18)
 	if request.method == "POST":
