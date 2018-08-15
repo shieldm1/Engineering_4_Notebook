@@ -3,7 +3,7 @@
 
 gpio mode 0 out
 
-for i in {1..5}
+for i in {1..10}
 do
 	gpio write 0 1
 	echo $i
