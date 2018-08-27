@@ -10,3 +10,4 @@ I found this helpful:
 
 ![rpi_zero_io_pinouts.jpg](/images/rpi_zero_io_pinouts.jpg)
 ### Code
+[test2.py](/Python/test2.py)
